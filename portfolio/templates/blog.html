@@ -1,0 +1,547 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Famarg Properties | Blog-single</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+ <!-- Favicons -->
+  <link href="{% static 'img/famarglogo.png' %}" rel="icon">
+  <link href="{% static 'img/famarglogo.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: EstateAgency
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Property Search Section ======= -->
+  <div class="click-closed"></div>
+  <!--/ Form Search Star /-->
+  <div class="box-collapse">
+    <div class="title-box-d">
+      <h3 class="title-d">Search Property</h3>
+    </div>
+    <span class="close-box-collapse right-boxed bi bi-x"></span>
+    <div class="box-collapse-wrap form">
+      <form class="form-a">
+        <div class="row">
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label class="pb-2" for="Type">Keyword</label>
+                <label>
+                    <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
+                </label>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="Type">Type</label>
+              <select class="form-control form-select form-control-a" id="Type">
+                <option>All Type</option>
+                <option>For Rent</option>
+                <option>For Sale</option>
+                <option>Land for Sale</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="city">City</label>
+              <select class="form-control form-select form-control-a" id="city">
+                <option>All City</option>
+                <option>Nairobi</option>
+                <option>Kisumu</option>
+                <option>Mombasa</option>
+                <option>Nakuru</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="bedrooms">Bedrooms</label>
+              <select class="form-control form-select form-control-a" id="bedrooms">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="garages">Garages</label>
+              <select class="form-control form-select form-control-a" id="garages">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="bathrooms">Bathrooms</label>
+              <select class="form-control form-select form-control-a" id="bathrooms">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="price">Min Price</label>
+              <select class="form-control form-select form-control-a" id="price">
+                <option>Unlimite</option>
+                <option>100,000/=</option>
+                <option>6,750,000/=</option>
+                <option>13,500,000/=</option>
+                <option>20,250,000/=</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-b">Search Property</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div><!-- End Property Search Section -->>
+
+  <!-- ======= Header/Navbar ======= -->
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="/">Famarg<span class="color-b">Properties</span></a>
+
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link " href="/">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="/about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="/propertygrid">Property</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="/blog">Blog</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item " href="/propertysingle">Property Single</a>
+              <a class="dropdown-item " href="/agentsgrid">Agents Grid</a>
+              <a class="dropdown-item " href="/agentsingle">Agent Single</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+        <i class="bi bi-search"></i>
+      </button>
+
+    </div>
+  </nav><!-- End Header/Navbar -->
+
+  <main id="main">
+
+    <!-- ======= Intro Single ======= -->
+    <section class="intro-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">Book Cover Deisgn</h1>
+              <span class="color-text-a">News Single.</span>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Book Cover Deisgn
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Intro Single-->
+
+    <!-- ======= Blog Single ======= -->
+    <section class="news-single nav-arrow-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="news-img-box">
+              <img src=" {% static 'img/plan2.jpg' %} assets/img/slide-3.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+            <div class="post-information">
+              <ul class="list-inline text-center color-a">
+                <li class="list-inline-item mr-2">
+                  <strong>Author: </strong>
+                  <span class="color-text-a">Morgan Jimenez</span>
+                </li>
+                <li class="list-inline-item mr-2">
+                  <strong>Category: </strong>
+                  <span class="color-text-a">Travel</span>
+                </li>
+                <li class="list-inline-item">
+                  <strong>Date: </strong>
+                  <span class="color-text-a">19 Apr. 2023</span>
+                </li>
+              </ul>
+            </div>
+            <div class="post-content color-text-a">
+              <p class="post-intro">
+                It goes without saying that any homeowner’s primary goal is to generate as much income from their investment as is possible. However, they must price their properties appropriately and in line with the local market lest they get stuck with an empty property. Now, flipping houses isn’t as easy as it may come off initially, as Real Estate falls prey to what we call the ‘hedonic pricing model’ of valuation.
+              </p>
+              <p>
+                This works on the premise that factors affecting a marketable good can be determined by both internal characteristics and external factors in its immediate environment. Same as one can assume the price of a car will reflect the characteristics of the car such as styling, luxury, utility, fuel economy, and so on.
+              </p>
+              <p>
+              And seeing as the property market essentially cannot survive in an isolated state, it may be very easy to go wrong if both these factors are not put into consideration at the point of investment.
+              </p>
+              <blockquote class="blockquote">
+                <p class="mb-4">If you found this article useful let us know on the comment box below. </p>
+                <footer class="blockquote-footer">
+                  <strong>Albert Vargas</strong>
+                  <cite title="Source Title">Author</cite>
+                </footer>
+              </blockquote>
+              <p>
+               Of importance to note is that performance of the housing sector is intertwined with that of the broader economy through real, financial and fiscal circuits. In Kenya, Real Estate contributed about 8.5 percent in GDP growth this year (2023), a total of which stands at USD75 Billion at the present (2023).
+We always say ‘if you’re thinking of investing in Real Estate to earn passive income, you need to accept the reality that there are factors you can change and others you will have totally no control over’.
+              </p>
+            </div>
+            <div class="post-footer">
+              <div class="post-share">
+                <span>Share: </span>
+                <ul class="list-inline socials">
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="bi bi-facebook" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="bi bi-twitter" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="bi bi-instagram" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="bi bi-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+            <div class="title-box-d">
+              <h3 class="title-d">Comments (4)</h3>
+            </div>
+            <div class="box-comments">
+              <ul class="list-comments">
+                <li>
+                  <div class="comment-avatar">
+                    <img src=" {% static 'img/author-2.jpg' %}  " alt="">
+                  </div>
+                  <div class="comment-details">
+                    <h4 class="comment-author">Emma Stone</h4>
+                    <span>25 May 2023</span>
+                    <p class="comment-description">
+                     great post
+                     Thanks for sharing your view
+                    </p>
+                    <a href="3">Reply</a>
+                  </div>
+                </li>
+                <li class="comment-children">
+                  <div class="comment-avatar">
+                    <img src=" {% static 'img/author-1.jpg' %} " alt="">
+                  </div>
+                  <div class="comment-details">
+                    <h4 class="comment-author">Oliver Colmenares</h4>
+                    <span>5 June 2023</span>
+                    <p class="comment-description">
+                    Its better to do quality comments on real estate blog. Its make other to gain trust on agent and increase customer, connections and contacts.
+                    </p>
+                    <a href="3">Reply</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="comment-avatar">
+                    <img src=" {% static 'img/author-2.jpg' %} " alt="">
+                  </div>
+                  <div class="comment-details">
+                    <h4 class="comment-author">Elena Reece</h4>
+                    <span>18 July 2023</span>
+                    <p class="comment-description">
+                      great post Thanks for sharing your view.
+                    </p>
+                    <a href="3">Reply</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="form-comments">
+              <div class="title-box-d">
+                <h3 class="title-d"> Leave a Reply</h3>
+              </div>
+              <form class="form-a">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <label for="inputName">Enter name</label>
+                      <input type="text" class="form-control form-control-lg form-control-a" id="inputName" placeholder="Name *" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <label for="inputEmail1">Enter email</label>
+                      <input type="email" class="form-control form-control-lg form-control-a" id="inputEmail1" placeholder="Email *" required>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <label for="inputUrl">Enter website</label>
+                      <input type="url" class="form-control form-control-lg form-control-a" id="inputUrl" placeholder="Website">
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <label for="textMessage">Enter message</label>
+                      <textarea id="textMessage" class="form-control" placeholder="Comment *" name="message" cols="45" rows="8" required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="btn btn-a">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog Single-->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <section class="section-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">FamargProperties</h3>
+            </div>
+            <div class="w-body-a">
+              <p class="w-text-a color-text-a">
+                1st Floor,Morningside Office Park, Ngong Road.</p>
+
+<p>P.O. Box 58622-00200 Nairobi, Kenya.
+              </p>
+            </div>
+            <div class="w-footer-a">
+              <ul class="list-unstyled">
+                <li class="color-a">
+                  <span class="color-text-a">Phone .</span> +254 707 111 777
+                </li>
+                <li class="color-a">
+                  <span class="color-text-a">Email .</span> sales@famarg-properties.co.ke
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">The Company</h3>
+            </div>
+            <div class="w-body-a">
+              <div class="w-body-a">
+                <ul class="list-unstyled">
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="#">Site Map</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="#">Legal</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="#">Agent Admin</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="#">Careers</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="#">Affiliate</a>
+                  </li>
+                  <li class="item-list-a">
+                    <i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Actions</h3>
+            </div>
+            <div class="w-body-a">
+              <ul class="list-unstyled">
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">For Sale</a>
+                </li>
+
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">For Rent</a>
+                </li>
+
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Land for Sale</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="nav-footer">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Property</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Blog</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="socials-a">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright-footer">
+            <p class="copyright color-text-a">
+              &copy; Copyright
+              <span class="color-a">FamargProperties</span> All Rights Reserved.
+            </p>
+          </div>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+ <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
